@@ -27,4 +27,18 @@
   --cl-neutral-600: hsl(234, 25%, 52%);
   --cl-neutral-800: hsl(233, 54%, 16%);
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
 /*# sourceMappingURL=./styles.css.map */
