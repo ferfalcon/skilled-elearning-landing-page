@@ -20,5 +20,11 @@
   --ty-copy: var(--fw-medium) var(--fs-400)/var(--lh-800) var(--ff-main);
   --ty-button: var(--fw-black) var(--fs-400)/var(--lh-800) var(--ff-main);
   --ty-subsection-link: var(--fw-medium) var(--fs-500)/var(--lh-700) var(--ff-main);
+  --cl-accent-300: hsl(341, 100%, 83%);
+  --cl-accent-500: hsl(341, 92%, 62%);
+  --cl-neutral-100: hsl(0, 0%, 100%);
+  --cl-neutral-400: hsl(232, 10%, 56%);
+  --cl-neutral-600: hsl(234, 25%, 52%);
+  --cl-neutral-800: hsl(233, 54%, 16%);
 }
 /*# sourceMappingURL=./styles.css.map */
