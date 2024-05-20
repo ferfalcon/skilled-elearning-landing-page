@@ -120,7 +120,7 @@ main {
 }
 @media (min-width: 90rem) {
   .main-section {
-    grid-template-rows: 10.75rem auto 1.875rem auto 2.5rem auto 10.925rem;
+    grid-template-rows: 10.75rem auto 1.875rem auto 2.5rem auto 13.425rem;
     grid-template-columns: minmax(0, auto) minmax(0, 10.313rem) minmax(min-content, 28.563rem) minmax(min-content, 40.813rem) minmax(0, 10.313rem) minmax(0, auto);
   }
 }
@@ -186,8 +186,9 @@ main {
 }
 @media (min-width: 90rem) {
   .main-section__picture img {
+    bottom: 2.15rem;
     width: 65.375rem;
-    margin-inline-start: 8.125rem;
+    margin-inline-start: 6.725rem;
   }
 }
 @media (min-width: 48rem) {
@@ -215,7 +216,7 @@ main {
 @media (min-width: 90rem) {
   .main-article {
     margin-block-start: 0.75rem;
-    padding-block-end: 8.75rem;
+    padding-block-end: 9rem;
     row-gap: 3.5rem;
     grid-template-columns: minmax(0, auto) minmax(0, 10.313rem) minmax(min-content, 21.875rem) minmax(auto, 1.875rem) minmax(min-content, 21.875rem) minmax(auto, 1.875rem) minmax(min-content, 21.875rem) minmax(0, 10.313rem) minmax(0, auto);
   }
@@ -262,16 +263,27 @@ main {
     padding-block-start: 3.5rem;
   }
 }
+@media (min-width: 90rem) {
+  .main-article__heading {
+    padding-block-start: 4rem;
+  }
+}
 .course-card {
   display: grid;
-  grid-template-rows: 1.5rem 3.5rem auto 1rem auto 1.65rem auto 2rem;
   grid-template-columns: 1.75rem 1fr 1.75rem;
+  grid-template-rows: 1.5rem 3.5rem auto 1rem auto 1.65rem auto 2rem;
   position: relative;
   z-index: 0;
 }
 @media (min-width: 48rem) {
   .course-card {
     grid-template-columns: 1.75rem 1fr 1.25rem;
+  }
+}
+@media (min-width: 90rem) {
+  .course-card {
+    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-rows: 1.5rem 4rem auto 1.5rem 1fr 1.65rem auto 2.5rem;
   }
 }
 .course-card > * {

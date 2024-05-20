@@ -181,7 +181,7 @@ main {
 	}
 
 	@media (min-width: 90rem) {
-		grid-template-rows: 10.75rem auto 1.875rem auto 2.5rem auto 10.925rem; 
+		grid-template-rows: 10.75rem auto 1.875rem auto 2.5rem auto 13.425rem; 
 		grid-template-columns: 
 			minmax(0, auto) 
 			minmax(0, 10.313rem) 
@@ -248,10 +248,11 @@ main {
 				width: 43.438rem;
 				margin-inline-start: -23.25%;
 			}
-
+			
 			@media (min-width: 90rem) {
+				bottom: 2.15rem;
 				width: 65.375rem;
-				margin-inline-start: 8.125rem;
+				margin-inline-start: 6.725rem;
 			}
 		}
 
@@ -293,7 +294,7 @@ main {
 
 	@media (min-width: 90rem) {
 		margin-block-start: .75rem;
-		padding-block-end: 8.75rem;
+		padding-block-end: 9rem;
 		row-gap: 3.5rem;
 		grid-template-columns: 
 			minmax(0, auto) 
@@ -356,6 +357,10 @@ main {
 			margin-block-start: 1.5rem;
 			padding-block-start: 3.5rem;
 		}
+
+		@media (min-width: 90rem) {
+			padding-block-start: 4rem;
+		}
 	}
 }
 
@@ -363,13 +368,18 @@ main {
 
 .course-card {
 	display: grid;
-	grid-template-rows: 1.5rem 3.5rem auto 1rem auto 1.65rem auto 2rem;
 	grid-template-columns: 1.75rem 1fr 1.75rem;
+	grid-template-rows: 1.5rem 3.5rem auto 1rem auto 1.65rem auto 2rem;
 	position: relative;
 	z-index: 0;
 	
 	@media (min-width: 48rem) {
 		grid-template-columns: 1.75rem 1fr 1.25rem;
+	}
+	
+	@media (min-width: 90rem) {
+		grid-template-columns: 2rem 1fr 2rem;
+		grid-template-rows: 1.5rem 4rem auto 1.5rem 1fr 1.65rem auto 2.5rem;
 	}
 
 	& > * {
