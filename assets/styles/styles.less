@@ -31,7 +31,7 @@
 	--ty-button: var(--fw-bold) var(--fs-200) var(--ff-main);
 	--ty-subsection-link: var(--fw-bold) var(--fs-300) var(--ff-main);
 	
-	@media (min-width: 48rem) {
+	@media (min-width: 90rem) {
 		--ty-heading-primary: var(--fw-extra-bold) var(--fs-900) var(--ff-main);
 		--ty-heading-secondary: var(--fw-extra-bold) var(--fs-700)/var(--lh-400) var(--ff-main);
 		--ty-heading-tertiary: var(--fw-extra-bold) var(--fs-500) var(--ff-main);
@@ -99,6 +99,10 @@ main {
 	padding: 0.844em 1.51em;
 	border-radius: 1.75rem;
 	text-decoration: none;
+	
+	@media (min-width: 90rem) {
+		padding: 0.92em 1.775em;
+	}
 }
 
 // ---------------------------------
@@ -126,6 +130,17 @@ main {
 			minmax(0, .5rem) 
 			minmax(min-content, max(37rem)) 
 			minmax(0, 2.5rem) 
+			minmax(0, auto);
+	}
+
+	@media (min-width: 90rem) {
+		grid-template-columns: 
+			minmax(0, auto) 
+			minmax(0, 10.313rem) 
+			minmax(min-content, max(7rem))
+			minmax(0, .5rem) 
+			minmax(min-content, max(61.875rem)) 
+			minmax(0, 10.313rem) 
 			minmax(0, auto);
 	}
 
@@ -165,6 +180,17 @@ main {
 			minmax(0, auto);
 	}
 
+	@media (min-width: 90rem) {
+		grid-template-rows: 10.75rem auto 1.875rem auto 2.5rem auto 10.925rem; 
+		grid-template-columns: 
+			minmax(0, auto) 
+			minmax(0, 10.313rem) 
+			minmax(min-content, max(28.563rem))
+			minmax(min-content, max(40.813rem))
+			minmax(0, 10.313rem) 
+			minmax(0, auto);
+	}
+
 	&__heading {
 		font: var(--ty-heading-primary);
 		color: var(--cl-neutral-800);
@@ -194,9 +220,14 @@ main {
 		grid-row: 5;
 		width: fit-content;
 		padding: 1.095em 2.36em;
-
+		
 		@media (min-width: 48rem) {
 			grid-row: 6;
+		}
+
+		@media (min-width: 90rem) {
+			border-radius: 1.969rem;
+			padding: 1.112em 1.665em;
 		}
 	}
 	
@@ -216,6 +247,11 @@ main {
 				bottom: 0;
 				width: 43.438rem;
 				margin-inline-start: -23.25%;
+			}
+
+			@media (min-width: 90rem) {
+				width: 65.375rem;
+				margin-inline-start: 8.125rem;
 			}
 		}
 
@@ -254,16 +290,59 @@ main {
 			minmax(0, 2.5rem) 
 			minmax(0, auto);
 	}
+
+	@media (min-width: 90rem) {
+		margin-block-start: .75rem;
+		padding-block-end: 8.75rem;
+		row-gap: 3.5rem;
+		grid-template-columns: 
+			minmax(0, auto) 
+			minmax(0, 10.313rem) 
+			minmax(min-content, max(21.875rem))
+			minmax(auto, 1.875rem) 
+			minmax(min-content, max(21.875rem))
+			minmax(auto, 1.875rem) 
+			minmax(min-content, max(21.875rem))
+			minmax(0, 10.313rem) 
+			minmax(0, auto);
+	}
 	
 	& > * {
 		grid-column: 3;
-	}
 
-	@media (min-width: 48rem) {
-		& > *:nth-child(even) {
-			grid-column: 5;
+		@media (min-width: 48rem) {
+			&:nth-child(even) {
+				grid-column: 5;
+			}
+		}
+
+		@media (min-width: 90rem) {
+			&:nth-child(n) {
+				grid-column: 3;
+			}
+
+			&:nth-child(n + 2) {
+				grid-column: 5;
+			}
+
+			&:nth-child(n + 3) {
+				grid-column: 7;
+			}
+
+			&:nth-child(n + 4) {
+				grid-column: 3;
+			}
+
+			&:nth-child(n + 5) {
+				grid-column: 5;
+			}
+
+			&:nth-child(n + 6) {
+				grid-column: 7;
+			}
 		}
 	}
+
 
 	&__heading {
 		font: var(--ty-heading-secondary);
@@ -357,6 +436,17 @@ main {
 			minmax(0, .5rem) 
 			minmax(min-content, max(37rem)) 
 			minmax(0, 2.5rem) 
+			minmax(0, auto);
+	}
+
+	@media (min-width: 90rem) {
+		grid-template-columns: 
+			minmax(0, auto) 
+			minmax(0, 10.313rem) 
+			minmax(min-content, max(7rem))
+			minmax(0, .5rem) 
+			minmax(min-content, max(61.875rem)) 
+			minmax(0, 10.313rem) 
 			minmax(0, auto);
 	}
 
