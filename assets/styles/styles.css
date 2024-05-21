@@ -105,8 +105,12 @@ main {
   justify-self: end;
   background: var(--cl-neutral-800);
 }
+.main-header__cta:hover {
+  background: var(--cl-neutral-600);
+}
 .main-section {
   margin-block: 2.375rem 0;
+  position: relative;
   display: grid;
   grid-template-rows: auto 1.625rem auto 1.5rem auto 25.563rem;
   grid-template-columns: minmax(0, auto) minmax(0, 1rem) minmax(min-content, 21.438rem) minmax(0, 1rem) minmax(0, auto);
@@ -148,11 +152,23 @@ main {
   }
 }
 .main-section__cta {
+  position: relative;
+  overflow: hidden;
   background: var(--gd-primary);
   grid-column: 3;
   grid-row: 5;
   width: fit-content;
   padding: 1.095em 2.36em;
+}
+.main-section__cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--cl-neutral-100);
+  opacity: 0;
+}
+.main-section__cta:hover::after {
+  opacity: 0.5;
 }
 @media (min-width: 48rem) {
   .main-section__cta {
@@ -176,6 +192,7 @@ main {
   max-width: initial;
   margin-block-start: 1.625rem;
   margin-inline-start: -13.25%;
+  z-index: -1;
 }
 @media (min-width: 48rem) {
   .main-section__picture img {
@@ -306,6 +323,9 @@ main {
   text-decoration: none;
   grid-row: 7;
 }
+.course-card__cta:hover {
+  color: var(--cl-accent-300);
+}
 .course-card::after {
   content: '';
   position: inherit;
@@ -338,11 +358,23 @@ main {
   align-self: center;
 }
 .main-footer__cta {
+  position: relative;
+  overflow: hidden;
   grid-column: 5;
   grid-row: 2;
   justify-self: end;
   align-self: center;
   background: var(--gd-secondary);
+}
+.main-footer__cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--cl-neutral-100);
+  opacity: 0;
+}
+.main-footer__cta:hover::after {
+  opacity: 0.5;
 }
 .signature {
   position: absolute;
